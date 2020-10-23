@@ -21,7 +21,7 @@ class PetFriends:
             result = res.text
         return status, result
 
-    def get_list_of_pets(self, auth_key: json, filter: str = "") -> json
+    def get_list_of_pets(self, auth_key: json, filter: str = "") -> json:
         headers = {'auth_key': auth_key['key']}
         filter = {'filter': filter}
 
